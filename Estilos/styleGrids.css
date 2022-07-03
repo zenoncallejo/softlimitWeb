@@ -53,11 +53,21 @@ html {
     border-style: solid;
     border-color: rgba(70, 67, 64, 0.414);
     padding: 5px;
+    transition: all 1s;
 }
 
 .encabezado__nav--subrayado {
     text-decoration: none;
     color: white;
+    transition: color 1s;
+}
+
+.encabezado__nav--subrayado:hover {
+    color: black
+}
+
+.encabezado__nav li:hover {
+    background-color: rgba(254, 235, 212, 0.801);
 }
 
 /* FOOTER */
