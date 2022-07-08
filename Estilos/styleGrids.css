@@ -202,10 +202,7 @@ html {
     background-size: cover;
 }
 
-.galeria {
-    display: grid;
-    grid-template-areas: "header" "galTitulo" "galImgs" "footer";
-}
+
 
 .galeria__title {
     background-color: rgba(250, 235, 215, 0.772);
@@ -307,7 +304,7 @@ html {
     display: flex;
     flex-direction: column;
     width: 700px;
-    height: 500px;
+    height: 600px;
     padding: 25px;
     font-size: 3rem;
     line-height: 50px;
@@ -321,7 +318,7 @@ html {
     border-style: solid;
     display: flex;
     width: 700px;
-    height: 500px;
+    height: 600px;
     padding: 25px;
     justify-content: center;
 
