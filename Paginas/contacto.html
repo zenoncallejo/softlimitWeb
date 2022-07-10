@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../Estilos/styleGrids.css">
     <title>Soft Limit - Contacto</title>
     
@@ -35,9 +34,9 @@
     
     </header>
 
-    <main class="contacto container-fluid">
+    <main class="contacto">
 
-        <div  class="contacto__main ">
+        <div  class="contacto__main">
 
             <div>
                 <h3>CONTACTANOS</h3>
@@ -45,23 +44,21 @@
             </div>    
 
             <form>
-                <div class="form-outline mb-4">
-                  <input type="text" id="form4Example1" class="form-control" />
-                  <label class="form-label" for="form4Example1">Nombre</label>
-                </div>
-              
-                <div class="form-outline mb-4">
-                  <input type="email" id="form4Example2" class="form-control" />
-                  <label class="form-label" for="form4Example2">Email</label>
-                </div>
-              
-                <div class="form-outline mb-4">
-                  <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-                  <label class="form-label" for="form4Example3">Comentario</label>
-                </div>
-              
-                <button type="submit" class="btn btn-primary">Envar</button> 
-              </form>
+                <div>
+                    <label for="nombre">Nombre:</label>       
+                    <input type="text" placeholder="Ingrese su nombre" name="nombre" class="nombre">
+                        
+                    <label for="correo">Correo:</label>
+                    <input type="email" name="correo" id="" placeholder="Ingrese su e-mail">
+                </div>        
+                    <label for="comentario">Comentarios:</label>
+                    <textarea name="" id="" cols="30" rows="10" ></textarea>
+
+                    <input type="submit" value="Enviar">
+
+                    <input type="reset" value="Borrar todo">
+
+            </form>
 
         </div>
 
@@ -84,8 +81,6 @@
         </div>
 
     </footer>
-
-    <script src="../js/bootstrap.min.js"></script>
 
 </body>
 
