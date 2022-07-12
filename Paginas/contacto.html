@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../Estilos/styleGrids.css">
     <title>Soft Limit - Contacto</title>
     
@@ -12,25 +13,34 @@
 <body class="bodyContacto">
 
     <header class="encabezado">
-        
-        <div class="encabezado__logo">
-            <h3>Soft</h3>
-            <h3>Limit</h3>
-        </div>
-        
-        <div class="encabezado__nav">
-            <nav>   
 
-                <ul>
-                    <li><a href="../index.html"  class="encabezado__nav--subrayado">HOME</a></li>
-                    <li><a href="colecciones.html" class="encabezado__nav--subrayado">COLECCIONES</a></li>
-                    <li><a href="galeria.html" class="encabezado__nav--subrayado">GALERIA</a></li>
-                    <li><a href="nosotros.html" class="encabezado__nav--subrayado">NOSOTROS</a></li>
-                    <li class="encabezado__menu--subrayado">CONTACTO</li>
-                </ul>
-
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">SoftLimit</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="colecciones.html">Colecciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                  </li>
+                </ul> 
+              </div>
+            </div>
+        </nav>
     
     </header>
 
@@ -39,26 +49,28 @@
         <div  class="contacto__main">
 
             <div>
-                <h3>CONTACTANOS</h3>
-                <p>Escribinos tu consulta y te respondemos a la brevedad!</p>
+                <h1>CONTACTANOS</h1>
+                <h2>Escribinos tu consulta y te respondemos a la brevedad!</h2>
             </div>    
 
             <form>
-                <div>
-                    <label for="nombre">Nombre:</label>       
-                    <input type="text" placeholder="Ingrese su nombre" name="nombre" class="nombre">
-                        
-                    <label for="correo">Correo:</label>
-                    <input type="email" name="correo" id="" placeholder="Ingrese su e-mail">
-                </div>        
-                    <label for="comentario">Comentarios:</label>
-                    <textarea name="" id="" cols="30" rows="10" ></textarea>
-
-                    <input type="submit" value="Enviar">
-
-                    <input type="reset" value="Borrar todo">
-
-            </form>
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="Nombre">Nombre</label>
+                    <input type="text" id="nombre" class="form-control" />
+                </div>
+              
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="Correo">Correo</label>
+                    <input type="email" id="Correo" class="form-control" />
+                </div>
+              
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="Mensaje">Mensaje</label>
+                    <textarea class="form-control" id="Mensaje" rows="4"></textarea>
+                </div>
+              
+                <button type="submit" class="btn btn-secondary btn-block mb-4">Enviar</button>
+              </form>
 
         </div>
 
@@ -81,6 +93,8 @@
         </div>
 
     </footer>
+
+    <script src="../js/bootstrap.min.js"></script>
 
 </body>
 

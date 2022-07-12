@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../Estilos/styleGrids.css">
     <title>Soft Limit - Galeria</title>
     
@@ -12,54 +13,82 @@
 <body class="bodyGaleria">
  
     <header class="encabezado">
-        
-        <div class="encabezado__logo">
-            <h3>Soft</h3>
-            <h3>Limit</h3>
-        </div>
-        
-        <div class="encabezado__nav">
-            <nav>   
 
-                <ul>
-                    <li><a href="../index.html"  class="encabezado__nav--subrayado">HOME</a></li>
-                    <li><a href="colecciones.html" class="encabezado__nav--subrayado">COLECCIONES</a></li>
-                    <li class="encabezado__menu--subrayado">GALERIA</li>
-                    <li><a href="nosotros.html" class="encabezado__nav--subrayado">NOSOTROS</a></li>
-                    <li><a href="contacto.html" class="encabezado__nav--subrayado">CONTACTO</a></li>
-                </ul>
-
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">SoftLimit</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="colecciones.html">Colecciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                  </li>
+                </ul> 
+              </div>
+            </div>
+        </nav>
     
     </header>
 
     <main class="galeria">
 
         <div class="galeria__title">
-            <h2>GALERIA DE FOTOS</h2>
+            <h1>GALERIA</h1>
+            <h2><i>Conoce los modelos</i></h2>
         </div>
 
-        <div class="galeria__imgs">
-
-            <img src="../Multimedia/1.jpg" alt="">
-            
-            <img src="../Multimedia/2.jpg" alt="">
-            
-            <img src="../Multimedia/3.jpg" alt="">
-            
-            <img src="../Multimedia/4.jpg" alt="">
-            
-            <img src="../Multimedia/5.jpeg" alt="">
-            
-            <img src="../Multimedia/6.jpeg" alt="">
-            
-            <img src="../Multimedia/7.jpeg" alt="">
-            
-            <img src="../Multimedia/8.jpeg" alt="">
-
-
-        </div>
+        <div class="galeria__carrusel">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../Multimedia/1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Multimedia/2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Multimedia/3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Multimedia/4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Multimedia/5.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Multimedia/6.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Multimedia/7.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Multimedia/8.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div> 
 
 
     </main>
@@ -78,6 +107,8 @@
         </div>
 
     </footer>
+
+    <script src="../js/bootstrap.min.js"></script>
 
 </body>
 

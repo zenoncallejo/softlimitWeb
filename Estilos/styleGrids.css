@@ -6,85 +6,51 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
-
-/* BACKGROUND PATTERN */
-
-
 
 
 /* ENCABEZADO */
 
 .encabezado {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;    
-    background: linear-gradient(rgba(136, 121, 116, 0.804) 40%, rgba(96, 90, 83, 0.771) 100%);
-    border-style: solid;
-    border-color: rgb(0, 0, 0);
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    padding: 20px;
-    position: sticky;
-    top: 0;
+    z-index: 2;
     grid-area: header;
 }
 
-.encabezado__logo {
+.navbar {
+    background: linear-gradient(rgba(136, 121, 116, 0.804) 40%, rgba(96, 90, 83, 0.771) 100%);
+    font-size: 2rem;
+}
+
+.navbar ul {
+    margin-left: 750px;
+}
+
+.navbar li {
+    margin: 0px 50px 0px 50px;
+}
+
+.navbar-brand {
     border-style: solid;
     font-size: 2rem;
-    padding: 2px;
-}
-
-
-.encabezado__nav {
-    display: flex;
-    align-items: center;
-}
-
-.encabezado__nav li {
-    display: inline;
-    font-size: 1.7rem;
-    list-style: none;
-    margin: 0 30px 0 30px;
-    background-color: rgba(58, 55, 52, 0.352);
-    border-style: solid;
-    border-color: rgba(70, 67, 64, 0.414);
-    padding: 5px;
-    transition: all 1s;
-}
-
-.encabezado__nav--subrayado {
-    text-decoration: none;
-    color: white;
-    transition: color 1s;
-}
-
-.encabezado__nav--subrayado:hover {
-    color: black
-}
-
-.encabezado__nav li:hover {
-    background-color: rgba(254, 235, 212, 0.801);
+    padding: 2px 5px 2px 5px;
 }
 
 /* FOOTER */
 
 .footer {
     display: flex;
-    justify-content: space-between;
-    font-size: 2rem;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
     background-color: rgb(234, 223, 223);
     border-style: solid;
     border-left: none;
     border-right: none;
     border-bottom: none;
-    padding: 10px;
+    padding: 5px;
     width: 100%;
     position: relative;
-    bottom: 0;
+    bottom: 0%;
     grid-area: footer;
 
 }
@@ -118,22 +84,21 @@ html {
     flex-direction: column;
     justify-content: center;
     color:rgb(28, 16, 3);
-    line-height: 225px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 786px;
-    text-align: center;
+    margin-right: 200px;
+    height: 900px;
+    text-align: right;
 
     grid-area: indexMain;
 }
 
 .indexMain h1 {
-    font-size: 25rem;    
+    font-size: 15rem;
+    margin-bottom: 50px;    
 }
 
 .indexMain h2 {
-    font-size: 6rem;
+    font-size: 4rem;
+    margin-bottom: 300px;
 }
 
 /*COLECCIONES*/
@@ -145,43 +110,45 @@ html {
 .coleccionesContenedor {
     display: grid;
     grid-template-areas: "header header" "tituloC tituloC" "invierno verano" "footer footer";
+    background-color: rgba(250, 235, 215, 0.772);
+    border: solid black;
+    margin: 75px;
 }
 
 .colecciones__title {
-    background-color: rgba(250, 235, 215, 0.772);
+    border: solid black;
+    background-color: rgba(186, 174, 155, 0.772);
     display: flex;
     justify-content: center;
     margin: 50px;
-    padding: 50px;
+    padding: 25px;
     font-size: 3rem;
-    border: solid black;
     
     grid-area: tituloC;
 }
 
 .colecciones__invierno {
-    background-color: rgba(250, 235, 215, 0.772);
+ 
     display: flex;
     flex-direction: column;
     padding: 25px;
     margin: 50px;
     margin-top: 0;
-    border: solid black;
-    font-size: 3rem;
+
+    font-size: 2rem;
     justify-content: space-around;
     align-items: center;    
     grid-area: invierno;
 }
 
 .colecciones__verano {
-    background-color: rgba(250, 235, 215, 0.772);
     display: flex;
     flex-direction: column;
     padding: 25px;
     margin: 50px;
     margin-top: 0;
-    border: solid black;
-    font-size: 3rem;
+ 
+    font-size: 2rem;
     justify-content: space-around;
     align-items: center;
     grid-area: verano;    
@@ -209,43 +176,35 @@ html {
 
 .galeria {
     display: grid;
-    grid-template-areas: "header" "galTitulo" "galImgs" "footer";
+    grid-template-areas: "header header" "galTitulo galCarrusel" "footer footer";
+    background-color: rgba(250, 235, 215, 0.772);
+    border: solid black;
+    margin: 75px 200px 75px 200px;
 }
 
 .galeria__title {
-    background-color: rgba(250, 235, 215, 0.772);
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    margin: 50px;
-    padding: 50px;
-    font-size: 3rem;
+    flex-direction: column;
     border: solid black;
+    background-color: rgba(186, 174, 155, 0.772);
+    margin: 200px 50px 200px 125px;
+    padding: 50px;
+    text-align: center;
     justify-content: center;
-
     grid-area: galTitulo;
 }
 
-.galeria__imgs {
-    background-color: rgba(250, 235, 215, 0.772);
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px;
-    margin-top: 0;
-    padding: 50px;
-    font-size: 3rem;
-    border: solid black;
-    justify-content: space-around;
-
-    grid-area: galImgs;
+.galeria__title h1 {
+    font-size: 5rem;
+    margin-bottom: 75px;
 }
 
-.galeria__imgs img {
-    width: 22%;
-    border: solid rgba(149, 118, 82, 0.882);
-    border-width: 8px;
-    margin-right: 3px;
-    margin-bottom: 35px;
+.galeria__carrusel {
+    margin: 50px;
+    width: 500px;
+    align-content: center;
+
+    grid-area: galCarrusel;
 }
 
 /*NOSOTROS*/
@@ -303,7 +262,7 @@ html {
     display: grid;
     grid-template-areas: "header header" "contactoData contactoMaps" "footer footer";
     padding: 100px;
-    height: 788px;
+    height: 920px;
 }
 
 .contacto__main {
@@ -312,13 +271,17 @@ html {
     display: flex;
     flex-direction: column;
     width: 700px;
-    height: 500px;
+    height: 550px;
     padding: 25px;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 50px;
     justify-content: space-between;
 
     grid-area: contactoData;
+}
+
+.form-control {
+    font-size: 1.5rem;
 }
 
 .contacto__maps {
@@ -326,7 +289,7 @@ html {
     border-style: solid;
     display: flex;
     width: 700px;
-    height: 500px;
+    height: 550px;
     padding: 25px;
     justify-content: center;
 
@@ -336,39 +299,45 @@ html {
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 768px) {
-    .encabezado {
-        padding: 10px;
-    }
-    
-    .encabezado__logo {
-        border-style: solid;
-        font-size: 2rem;
-        padding: 1px;
 
+    .navbar {
+        font-size: 1.5rem;
     }
     
-    .encabezado__nav li {
+    .navbar ul {
+        margin-left: 0px;
+    }
+
+    .navbar li {
+        margin: 0px;
+    }
+    
+    .navbar-brand {
         font-size: 1.5rem;
-        margin: 0 5px 0 5px;
-        padding: 5px;
+        padding: 1.5px;
     }
 
     .indexMain {
-        height: 722px;
+        height: 825px;
         line-height: 100px;
+        margin-right: 40px;
     }
 
     .indexMain h1 {
-        font-size: 13rem;    
+        color: rgb(159, 159, 159);
+        font-size: 11rem;  
+        margin-bottom: 30px;  
     }
     
     .indexMain h2 {
+        color: rgb(0, 0, 0);
         font-size: 3rem;
+        margin-bottom: 300px;
     }
 
     .coleccionesContenedor {
         display: grid;
-        width: 100%;
+        margin: 25px 100px 25px 100px;
         grid-template-areas: "header" "tituloC" "invierno" "verano" "footer";
     }
     
@@ -400,32 +369,37 @@ html {
     
     .coleccionesContenedor img {
         width: 60%;
-        height: 500px;
+        height: 400px;
     }    
 
     .coleccionesContenedor p {
         margin: 30px;
     }
 
+    .galeria {
+        display: grid;
+        grid-template-areas: "header" "galTitulo" "galCarrusel" "footer";
+        margin: 50px 100px 50px 100px;
+    }
+    
     .galeria__title {
-        margin: 25px;
-        padding: 25px;
-        font-size: 2rem;
+        margin: 25px 100px 25px 100px;
+        padding: 50px;
+        text-align: center;
+        justify-content: center;
+        grid-area: galTitulo;
     }
-
-    .galeria__imgs {
-        padding: 10px;
-        margin: 25px;
-        margin-top: 0;
-        font-size: 2rem;
+    
+    .galeria__title h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
     }
-
-    .galeria__imgs img {
-        width: 40%;
-        border: solid rgba(149, 118, 82, 0.882);
-        border-width: 6px;
-        margin-right: 2px;
-        margin-top: 50px;
+    
+    .galeria__carrusel {
+        margin: 25px 110px 25px 110px;
+        width: 350px;
+    
+        grid-area: galCarrusel;
     }
 
     .nosotros {
@@ -453,12 +427,12 @@ html {
         display: grid;
         grid-template-areas: "header" "contactoData" "contactoMaps" "footer";
         padding: 30px;
-        height: 900px;
+        height: 1200px;
     }
     
     .contacto__main {
         width: 700px;
-        height: 400px;
+        height: 550px;
         padding: 25px;
         font-size: 2rem;
         line-height: 50px;
@@ -468,7 +442,7 @@ html {
     
     .contacto__maps {
         width: 700px;
-        height: 400px;
+        height: 550px;
         padding: 25px;
         margin-top: 25px;
     
@@ -476,31 +450,11 @@ html {
     }
 
     .contacto iframe {
-        height: 325px;
+        height: 500px;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .encabezado {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 4px;
-    }    
-    .encabezado__logo {
-        display: inline-block;
-        width: 55px;
-        font-size: 1.5rem;
-        padding: 1px;
-        margin: 2px 0 10px 0;
-    }
-    
-    .encabezado__nav li {
-        font-size: 1.2rem;
-        margin: 5px;
-        padding: 1px;
-        border-width: 1px;
-    }
 
     .footer {
         font-size: 1rem;
@@ -513,7 +467,7 @@ html {
     }
 
     .indexMain {
-        height: 758px;
+        height: 825px;
         line-height: 60px;
     }
 
@@ -525,55 +479,60 @@ html {
         font-size: 2.5rem;
     }
 
+    .coleccionesContenedor {
+        margin: 25px;
+    }
+    
     .colecciones__title {
-        margin: 10px;
-        padding: 10px;
-        font-size: 1.5rem;
-        border: solid black;
-        
-        grid-area: tituloC;
+        margin: 25px;
+        padding: 25px;
+        font-size: 2rem;
     }
     
     .colecciones__invierno {
-        padding: 10px;
-        margin: 10px;
-        font-size: 1.5rem;
+        padding: 25px;
+        margin: 25px;
+        margin-top: 0;
+        font-size: 2rem;
  
         grid-area: invierno;
     }
     
     .colecciones__verano {
-        padding: 10px;
-        margin: 10px;
-        font-size: 1.5rem;
+        padding: 25px;
+        margin: 25px;
+        font-size: 2rem;
 
         grid-area: verano;    
     }  
     
     .coleccionesContenedor img {
-        width: 200px;
-        height: 300px;
+        width: 90%;
+        height: 400px;
     }    
 
     .coleccionesContenedor p {
         margin: 20px;
     }
 
-    .galeria__title {
-        margin: 10px;
-        padding: 10px;
-        font-size: 1.5rem;
-    }
-
-    .galeria__imgs {
-        padding: 10px;
-        margin: 10px;
-        font-size: 1.5rem;
+    .galeria {
+        margin: 25px 50px 25px 50px;
+        height: 663px;
     }
     
-    .galeria__imgs img {
-        border-width: 3px;
-        margin-bottom: 5px;
+    .galeria__title {
+        margin: 15px 75px 15px 75px;
+        padding: 25px;
+    }
+    
+    .galeria__title h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .galeria__carrusel {
+        margin: 15px 40px 15px 40px;
+        width: 250px;
     }
 
     .nosotros {
@@ -608,7 +567,7 @@ html {
     
     .contacto__main {
         width: 400px;
-        height: 400px;
+        height: 450px;
         padding: 15px;
         font-size: 1.7rem;
         line-height: 30px;
@@ -623,6 +582,10 @@ html {
         margin-top: 15px;
     
         grid-area: contactoMaps;
+    }
+
+    .contacto iframe {
+        height: 350px;
     }
 
 }
