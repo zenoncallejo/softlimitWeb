@@ -1,0 +1,33 @@
+.bodyIndex {
+    background-image: url(../Multimedia/indexMainBG.jpg);    
+    background-size: cover;
+}
+
+.indexContenedor {
+    display: grid;
+    grid-template-areas: "header" "indexMain" "footer";
+
+}
+
+.indexMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:rgb(28, 16, 3);
+    margin-right: 200px;
+    height: 900px;
+    text-align: right;
+
+    grid-area: indexMain;
+
+    h1 {
+        font-size: 15rem;
+        margin-bottom: 50px;    
+    }
+
+    h2 {
+        font-size: 4rem;
+        margin-bottom: 300px;
+    }
+}
+

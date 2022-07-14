@@ -1,0 +1,39 @@
+.bodyGaleria {
+    background-image: url(../Multimedia/voileback.jpg);    
+    background-size: cover;
+}
+
+.galeria {
+    display: grid;
+    grid-template-areas: "header header" "galTitulo galCarrusel" "footer footer";
+    background-color: rgba(250, 235, 215, 0.772);
+    border: solid black;
+    margin: 75px 200px 100px 200px;
+    padding: 50px;
+}
+
+.galeria__title {
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    background-color: rgba(186, 174, 155, 0.772);
+    width: 300px;
+    height: 350px;
+    margin: 50px;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    grid-area: galTitulo;
+
+    h1 {
+        font-size: 5rem;
+        margin-bottom: 75px;
+    }
+}
+
+.galeria__carrusel {
+    width: 350px;
+
+
+    grid-area: galCarrusel;
+}

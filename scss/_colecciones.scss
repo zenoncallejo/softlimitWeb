@@ -1,0 +1,63 @@
+.bodyColecciones {
+    background-image: url(../Multimedia/galback.jpg);    
+    background-size: cover;
+}
+
+.coleccionesContenedor {
+    display: grid;
+    grid-template-areas: "header header" "tituloC tituloC" "invierno verano" "footer footer";
+    background-color: rgba(250, 235, 215, 0.772);
+    border: solid black;
+    margin: 75px;
+
+    img {
+        width: 70%;
+        height: 750px;
+        border: solid rgba(149, 118, 82, 0.882);
+        border-width: 8px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        margin: 50px;
+    }
+}
+
+.colecciones__title {
+    border: solid black;
+    background-color: rgba(186, 174, 155, 0.772);
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    padding: 25px;
+    font-size: 3rem;
+    
+    grid-area: tituloC;
+}
+
+.colecciones__invierno {
+ 
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: 50px;
+    margin-top: 0;
+    font-size: 2rem;
+    justify-content: space-around;
+    align-items: center;    
+    grid-area: invierno;
+}
+
+.colecciones__verano {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: 50px;
+    margin-top: 0;
+    font-size: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: verano;    
+}  
+

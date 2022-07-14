@@ -1,0 +1,43 @@
+.bodyContacto {
+    background-image: url(../Multimedia/indexMainBG.jpg);    
+    background-size: cover;
+}
+
+.contacto {
+    display: grid;
+    grid-template-areas: "header header" "contactoData contactoMaps" "footer footer";
+    padding: 100px;
+    height: 920px;
+    justify-content: space-evenly;
+}
+
+.contacto__main {
+    background-color: rgba(250, 235, 215, 0.772);
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 550px;
+    padding: 25px;
+    font-size: 2rem;
+    line-height: 50px;
+    justify-content: space-between;
+
+    grid-area: contactoData;
+}
+
+.form-control {
+    font-size: 1.5rem;
+}
+
+.contacto__maps {
+    background-color: rgba(250, 235, 215, 0.772);
+    border-style: solid;
+    display: flex;
+    width: 700px;
+    height: 550px;
+    padding: 25px;
+    justify-content: center;
+
+    grid-area: contactoMaps;
+}

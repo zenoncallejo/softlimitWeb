@@ -23,7 +23,7 @@ html {
 }
 
 .navbar ul {
-    margin-left: 750px;
+    margin-left: 500px;
 }
 
 .navbar li {
@@ -297,6 +297,63 @@ html {
 }
 
 /*MEDIA QUERIES*/
+
+@media screen and (max-width: 1440px) {
+    
+    .navbar ul {
+        margin-left: 180px;
+    }
+
+    .navbar li {
+        margin: 0px 30px 0px 30px;
+    }
+
+    .indexMain {
+        height: 770px;
+        line-height: 100px;
+        margin-right: 25px;
+    }
+
+    .coleccionesContenedor img {
+        width: 300px;
+        height: 400px;
+    }  
+
+    .galeria {
+        margin: 50px 50px 50px 50px;
+        height: 625px;
+    }
+
+    .galeria__title {
+        margin: 25px 100px 25px 100px;
+        padding: 50px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .galeria__carrusel {
+        margin: 25px 50px 25px 0px;
+        width: 350px;
+    }
+
+    .contacto {
+        padding: 100px;
+        height: 730px;
+    }
+    
+    .contacto__main {
+        width: 400px;
+    }
+    
+    .contacto__maps {
+        width: 400px;
+    }
+
+    .contacto__maps iframe {
+        height: 500px;
+    }
+    
+}
 
 @media screen and (max-width: 768px) {
 

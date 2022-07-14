@@ -1,17 +1,443 @@
-.h1 {
-  color: red; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-/* ejemplo de anidacion */
-ul {
-  list-style: none; }
-  ul li {
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif; }
+
+.encabezado {
+  z-index: 2;
+  grid-area: header; }
+
+.navbar {
+  background: linear-gradient(rgba(136, 121, 116, 0.804) 40%, rgba(96, 90, 83, 0.771) 100%);
+  font-size: 2rem; }
+  .navbar ul {
+    margin-left: 500px; }
+  .navbar li {
+    margin: 0px 50px 0px 50px; }
+
+.navbar-brand {
+  border-style: solid;
+  font-size: 2rem;
+  padding: 2px 5px 2px 5px; }
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  background-color: #eadfdf;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding: 5px;
+  width: 100%;
+  position: relative;
+  bottom: 0%;
+  grid-area: footer; }
+  .footer p {
+    display: flex;
+    align-items: center; }
+
+.footer__redes {
+  display: flex;
+  width: 50px;
+  height: 50px; }
+
+.bodyIndex {
+  background-image: url(../Multimedia/indexMainBG.jpg);
+  background-size: cover; }
+
+.indexContenedor {
+  display: grid;
+  grid-template-areas: "header" "indexMain" "footer"; }
+
+.indexMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #1c1003;
+  margin-right: 200px;
+  height: 900px;
+  text-align: right;
+  grid-area: indexMain; }
+  .indexMain h1 {
+    font-size: 15rem;
+    margin-bottom: 50px; }
+  .indexMain h2 {
+    font-size: 4rem;
+    margin-bottom: 300px; }
+
+.bodyColecciones {
+  background-image: url(../Multimedia/galback.jpg);
+  background-size: cover; }
+
+.coleccionesContenedor {
+  display: grid;
+  grid-template-areas: "header header" "tituloC tituloC" "invierno verano" "footer footer";
+  background-color: rgba(250, 235, 215, 0.772);
+  border: solid black;
+  margin: 75px; }
+  .coleccionesContenedor img {
+    width: 70%;
+    height: 750px;
+    border: solid rgba(149, 118, 82, 0.882);
+    border-width: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .coleccionesContenedor p {
+    margin: 50px; }
+
+.colecciones__title {
+  border: solid black;
+  background-color: rgba(186, 174, 155, 0.772);
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  padding: 25px;
+  font-size: 3rem;
+  grid-area: tituloC; }
+
+.colecciones__invierno {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  margin: 50px;
+  margin-top: 0;
+  font-size: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  grid-area: invierno; }
+
+.colecciones__verano {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  margin: 50px;
+  margin-top: 0;
+  font-size: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  grid-area: verano; }
+
+.bodyGaleria {
+  background-image: url(../Multimedia/voileback.jpg);
+  background-size: cover; }
+
+.galeria {
+  display: grid;
+  grid-template-areas: "header header" "galTitulo galCarrusel" "footer footer";
+  background-color: rgba(250, 235, 215, 0.772);
+  border: solid black;
+  margin: 75px 200px 100px 200px;
+  padding: 50px; }
+
+.galeria__title {
+  display: flex;
+  flex-direction: column;
+  border: solid black;
+  background-color: rgba(186, 174, 155, 0.772);
+  width: 300px;
+  height: 350px;
+  margin: 50px;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  grid-area: galTitulo; }
+  .galeria__title h1 {
+    font-size: 5rem;
+    margin-bottom: 75px; }
+
+.galeria__carrusel {
+  width: 350px;
+  grid-area: galCarrusel; }
+
+.bodyNosotros {
+  background-image: url(../Multimedia/bataFoile.jpeg);
+  background-size: cover; }
+
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(250, 235, 215, 0.772);
+  font-size: 3rem;
+  border: solid black;
+  margin: 50px;
+  padding: 50px; }
+
+.nosotros__title {
+  display: block; }
+
+.nosotros__cont {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center; }
+  .nosotros__cont img {
+    display: inline;
+    width: 30%;
+    border: solid rgba(149, 118, 82, 0.882);
+    border-width: 8px;
+    margin-top: 100px;
+    margin-bottom: 40px; }
+  .nosotros__cont h3 {
+    font-style: italic; }
+  .nosotros__cont p {
+    margin: 30px 120px 30px 120px; }
+
+.bodyContacto {
+  background-image: url(../Multimedia/indexMainBG.jpg);
+  background-size: cover; }
+
+.contacto {
+  display: grid;
+  grid-template-areas: "header header" "contactoData contactoMaps" "footer footer";
+  padding: 100px;
+  height: 920px;
+  justify-content: space-evenly; }
+
+.contacto__main {
+  background-color: rgba(250, 235, 215, 0.772);
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 550px;
+  padding: 25px;
+  font-size: 2rem;
+  line-height: 50px;
+  justify-content: space-between;
+  grid-area: contactoData; }
+
+.form-control {
+  font-size: 1.5rem; }
+
+.contacto__maps {
+  background-color: rgba(250, 235, 215, 0.772);
+  border-style: solid;
+  display: flex;
+  width: 700px;
+  height: 550px;
+  padding: 25px;
+  justify-content: center;
+  grid-area: contactoMaps; }
+
+@media screen and (max-width: 1440px) {
+  .navbar ul {
+    margin-left: 180px; }
+  .navbar li {
+    margin: 0px 30px 0px 30px; }
+  .indexMain {
+    height: 770px;
+    line-height: 100px;
+    margin-right: 25px; }
+  .coleccionesContenedor img {
+    width: 300px;
+    height: 400px; }
+  .galeria {
+    margin: 50px 50px 50px 50px;
+    height: 550px; }
+  .galeria__title {
+    padding: 50px; }
+  .galeria__carrusel {
+    width: 350px; }
+  .contacto {
+    padding: 100px;
+    height: 730px; }
+  .contacto__main {
+    width: 400px; }
+  .contacto__maps {
+    width: 400px; }
+    .contacto__maps iframe {
+      height: 500px; } }
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    font-size: 1.5rem; }
+    .navbar ul {
+      margin-left: 0px; }
+    .navbar li {
+      margin: 0px; }
+  .navbar-brand {
+    font-size: 1.5rem;
+    padding: 1.5px; }
+  .indexMain {
+    height: 825px;
+    line-height: 100px;
+    margin-right: 40px; }
+    .indexMain h1 {
+      color: #9f9f9f;
+      font-size: 11rem;
+      margin-bottom: 30px; }
+    .indexMain h2 {
+      color: black;
+      font-size: 3rem;
+      margin-bottom: 300px; }
+  .coleccionesContenedor {
+    display: grid;
+    margin: 25px 100px 25px 100px;
+    grid-template-areas: "header" "tituloC" "invierno" "verano" "footer"; }
+    .coleccionesContenedor img {
+      width: 60%;
+      height: 400px; }
+    .coleccionesContenedor p {
+      margin: 30px; }
+  .colecciones__title {
+    margin: 25px;
+    padding: 25px;
+    font-size: 2rem;
+    border: solid black;
+    grid-area: tituloC; }
+  .colecciones__invierno {
+    padding: 25px;
+    margin: 25px;
+    margin-top: 0;
+    font-size: 2rem;
+    grid-area: invierno; }
+  .colecciones__verano {
+    padding: 25px;
+    margin: 25px;
+    font-size: 2rem;
+    grid-area: verano; }
+  .galeria {
+    display: grid;
+    grid-template-areas: "header" "galTitulo" "galCarrusel" "footer";
+    margin: 50px 100px 50px 100px;
+    height: 1000px;
+    padding-top: 0px; }
+  .galeria__title {
+    margin: 0px;
+    padding: 50px;
+    height: 150px;
+    grid-area: galTitulo; }
+    .galeria__title h1 {
+      font-size: 3rem;
+      margin-bottom: 5px; }
+  .galeria__carrusel {
+    width: 350px;
+    grid-area: galCarrusel; }
+  .nosotros {
+    margin: 25px;
+    padding: 25px; }
+  .nosotros__title {
+    margin: 10px;
+    font-size: 2rem; }
+  .nosotros__cont {
+    font-size: 2rem; }
+    .nosotros__cont img {
+      width: 40%;
+      border-width: 4px;
+      margin-top: 50px;
+      margin-bottom: 25px; }
+  .contacto {
+    display: grid;
+    grid-template-areas: "header" "contactoData" "contactoMaps" "footer";
+    padding: 30px;
+    height: 1200px;
+    justify-content: space-evenly;
+    align-self: center; }
+  .contacto__main {
+    width: 700px;
+    height: 550px;
+    padding: 25px;
+    font-size: 2rem;
+    line-height: 50px;
+    grid-area: contactoData; }
+  .contacto__maps {
+    width: 700px;
+    height: 550px;
+    padding: 25px;
+    margin-top: 25px;
+    grid-area: contactoMaps; }
+    .contacto__maps iframe {
+      height: 500px; } }
+
+@media screen and (max-width: 500px) {
+  .footer {
+    font-size: 1rem;
+    padding: 5px; }
+  .footer__redes {
+    width: 20px;
+    height: 20px; }
+  .indexMain {
+    height: 700px;
+    line-height: 60px;
+    margin-right: 20px; }
+    .indexMain h1 {
+      font-size: 4rem;
+      margin-bottom: 30px; }
+    .indexMain h2 {
+      font-size: 2rem; }
+  .coleccionesContenedor {
+    margin: 20px; }
+    .coleccionesContenedor img {
+      width: 150px;
+      height: 230px; }
+    .coleccionesContenedor p {
+      font-size: 1.5rem;
+      margin: 20px; }
+  .colecciones__title {
+    margin: 10px;
     padding: 10px;
-    font-size: 40px; }
-    ul li a {
-      text-decoration: none; }
-      ul li a:hover {
-        color: green; }
-    ul li:hover {
-      padding: 40px; }
-
-/* PRACTICAR PASANDO MI CSS YA HECHO A SASS */
+    font-size: 2rem; }
+  .colecciones__invierno {
+    padding: 5px;
+    margin: 0px;
+    margin-top: 0;
+    font-size: 2rem;
+    grid-area: invierno; }
+  .colecciones__verano {
+    padding: 5px;
+    margin: 0px;
+    font-size: 2rem;
+    grid-area: verano; }
+  .galeria {
+    margin: 25px 10px 25px 10px;
+    height: 700px; }
+  .galeria__title {
+    width: 250px;
+    margin: 25px;
+    padding: 10px; }
+    .galeria__title h1 {
+      font-size: 2rem;
+      margin-bottom: 10px; }
+  .galeria__carrusel {
+    margin: 25px;
+    width: 250px; }
+  .nosotros {
+    margin: 10px;
+    padding: 10px; }
+  .nosotros__title {
+    margin: 10px;
+    font-size: 1.7rem; }
+  .nosotros__cont {
+    font-size: 1.7rem; }
+    .nosotros__cont img {
+      width: 50%;
+      border-width: 3px;
+      margin-top: 30px;
+      margin-bottom: 20px; }
+    .nosotros__cont p {
+      margin: 15px 60px 15px 60px; }
+  .contacto {
+    padding: 20px;
+    height: 1000px; }
+  .contacto__main {
+    width: 300px;
+    height: 450px;
+    padding: 15px;
+    font-size: 1.5rem;
+    line-height: 30px;
+    grid-area: contactoData; }
+  .contacto__maps {
+    width: 300px;
+    height: 450px;
+    padding: 15px;
+    grid-area: contactoMaps; }
+    .contacto__maps iframe {
+      width: 250px;
+      height: 375px; } }
