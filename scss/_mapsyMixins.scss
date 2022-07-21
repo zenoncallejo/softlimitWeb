@@ -1,0 +1,9 @@
+$colores: (
+    contenedoresBG: rgba(250, 235, 215, 0.772),
+    imgBorders: solid rgba(149, 118, 82, 0.882),
+);
+
+@mixin tamano ($width, $height) {
+    width: $width;
+    height: $height;    
+}

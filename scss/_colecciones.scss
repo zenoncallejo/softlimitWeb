@@ -6,14 +6,13 @@
 .coleccionesContenedor {
     display: grid;
     grid-template-areas: "header header" "tituloC tituloC" "invierno verano" "footer footer";
-    background-color: rgba(250, 235, 215, 0.772);
+    background-color: map-get($colores, $key: contenedoresBG);
     border: solid black;
     margin: 75px;
 
     img {
-        width: 70%;
-        height: 750px;
-        border: solid rgba(149, 118, 82, 0.882);
+        @include tamano (70%, 750px);
+        border: map-get($colores, imgBorders);
         border-width: 8px;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -26,7 +25,7 @@
 
 .colecciones__title {
     border: solid black;
-    background-color: rgba(186, 174, 155, 0.772);
+    background-color: map-get($colores, contenedoresBG);
     display: flex;
     justify-content: center;
     margin: 50px;
