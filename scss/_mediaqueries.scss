@@ -16,13 +16,28 @@
         margin-right: 25px;
     }
 
-    .coleccionesContenedor {
-        
-        img {
-        width: 300px;
-        height: 400px;
+    .fabricsContenedor {
+        margin: 25px;
+    }
+
+    .fabrics__ps {
+        p {
+            margin-right: 200px;
+        }
+    }
+
+    .fabrics__mf {
+        p {
+            margin-left: 200px;
+        }
     }  
-    }   
+
+    .fabrics__voile {
+        p {
+            margin-right: 200px;
+        }
+    }  
+
     .galeria {
         margin: 50px 50px 50px 50px;
         height: 550px;
@@ -93,46 +108,15 @@
         }
     }
 
-    .coleccionesContenedor {
-        display: grid;
-        margin: 25px 100px 25px 100px;
-        grid-template-areas: "header" "tituloC" "invierno" "verano" "footer";
+    .fabricsContenedor {
+        margin: 25px;
     
         img {
-            width: 60%;
-            height: 400px;
-        }    
-    
-        p {
-            margin: 30px;
+            @include tamano (150px, auto);
+            margin: 20px 5px 20px 5px;
         }
-    }
     
-    .colecciones__title {
-        margin: 25px;
-        padding: 25px;
-        font-size: 2rem;
-        border: solid black;
-        
-        grid-area: tituloC;
     }
-    
-    .colecciones__invierno {
-        padding: 25px;
-        margin: 25px;
-        margin-top: 0;
-        font-size: 2rem;
- 
-        grid-area: invierno;
-    }
-    
-    .colecciones__verano {
-        padding: 25px;
-        margin: 25px;
-        font-size: 2rem;
-
-        grid-area: verano;    
-    }  
     
     .galeria {
         display: grid;
@@ -173,7 +157,7 @@
         font-size: 2rem;
 
         img {
-            width: 40%;
+            width: 35%;
             border-width: 4px;
             margin-top: 50px;
             margin-bottom: 25px;
@@ -241,43 +225,63 @@
         }
     }
 
-    .coleccionesContenedor {
-        margin: 20px;
-
+    .fabricsContenedor {
+        margin: 25px;
+    
         img {
-            width: 150px;
-            height: 230px;
-        }    
+            @include tamano (75px, auto);
+            margin: 20px 5px 20px 5px;
+        }
+    
+    }
+    
+    .fabrics__title {
+        font-size: 2rem;
+        margin: 25px;
+        padding: 10px;
+    }
+    
+    .fabrics__ps {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 25px;
+        font-size: 1.5rem;
     
         p {
-            font-size: 1.5rem;
-            margin: 20px;
+            margin-right: 100px;
         }
     }
     
-    .colecciones__title {
-        margin: 10px;
+    .fabrics__mf {
+        display: flex;
+        flex-direction: column;
         padding: 10px;
-        font-size: 2rem;
-    }
+        margin: 25px;
+        font-size: 1.5rem;  
     
-    .colecciones__invierno {
-        padding: 5px;
-        margin: 0px;
-        margin-top: 0;
-        font-size: 2rem;
- 
-        grid-area: invierno;
-    }
-    
-    .colecciones__verano {
-        padding: 5px;
-        margin: 0px;
-        font-size: 2rem;
-
-        grid-area: verano;    
+        p {
+            margin-left: 75px;
+        }
     }  
     
+    .fabrics__voile {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 25px;
+        font-size: 1.5rem;
+  
+    
+        p {
+            margin-right: 75px;
+        }
+    }  
+    
+    .bajada {
+        font-size: 1.5rem;
+    }
+
     .galeria {
         margin: 25px 10px 25px 10px;
         height: 700px;
@@ -306,12 +310,13 @@
     }
 
     .nosotros__title {
-        margin: 10px;
-        font-size: 1.7rem;
+        margin: 50px 10px 30px 10px;
+        font-size: 1.5rem;
     }
 
     .nosotros__cont {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+        margin-bottom: 100px;
 
         img {
             width: 50%;
@@ -320,8 +325,14 @@
             margin-bottom: 20px;
         }
     
+        h2 {
+            font-size: 2rem;
+        }
+    
         p {
-            margin: 15px 60px 15px 60px;
+            margin: 20px;
+            font-size: 1.5rem;
+            margin-bottom: 100px;
         }
     }
 

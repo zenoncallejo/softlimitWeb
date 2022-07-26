@@ -1,0 +1,86 @@
+.bodyFabrics {
+    background-image: url(../Multimedia/galback.jpg);    
+    background-size: cover;
+}
+
+.fabricsContenedor {
+    display: grid;
+    grid-template-areas: "header" "tituloC" "polarsoft" "microfibra" "voile" "bajada" "footer";
+    background-color: map-get($colores, $key: contenedoresBG);
+    border: solid black;
+    margin: 75px;
+
+    img {
+        @include tamano (200px, auto);
+        margin: 20px 10px 20px 10px;
+    }
+
+}
+
+.fabrics__title {
+    border: solid black;
+    background-color: map-get($colores, contenedoresBG);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    padding: 25px;
+    font-size: 3rem;
+    
+    grid-area: tituloC;
+}
+
+.fabrics__ps {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: 50px;
+    margin-top: 0;
+    font-size: 2rem;
+    justify-content: left;
+    text-align: left;    
+    grid-area: polarsoft;
+
+    p {
+        margin-right: 500px;
+    }
+}
+
+.fabrics__mf {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: 50px;
+    margin-top: 0;
+    font-size: 2rem;
+    text-align: right;
+    align-items: flex-end;
+    grid-area: microfibra;    
+
+    p {
+        margin-left: 500px;
+    }
+}  
+
+.fabrics__voile {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: 50px;
+    margin-top: 0;
+    font-size: 2rem;
+    justify-content: left;
+    text-align: left;
+    grid-area: voile;    
+
+    p {
+        margin-right: 500px;
+    }
+}  
+
+.bajada {
+    font-size: 2rem;
+    text-align: center;
+    grid-area: bajada;
+}
