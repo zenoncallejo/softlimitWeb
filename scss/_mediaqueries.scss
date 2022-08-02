@@ -18,21 +18,32 @@
 
     .fabricsContenedor {
         margin: 25px;
+
+        img {
+            @include tamano (150px, auto);
+            margin: 15px 5px 15px 5px;
+        }
     }
 
     .fabrics__ps {
+        margin: 0px 250px 25px 25px;
+
         p {
             margin-right: 200px;
         }
     }
 
     .fabrics__mf {
+        margin: 0px 25px 25px 250px;
+
         p {
             margin-left: 200px;
         }
     }  
 
     .fabrics__voile {
+        margin: 0px 250px 25px 25px;
+
         p {
             margin-right: 200px;
         }
@@ -96,7 +107,6 @@
         margin-right: 40px;
 
         h1 {
-            color: rgb(159, 159, 159);
             font-size: 11rem;  
             margin-bottom: 30px;  
         }
@@ -112,10 +122,41 @@
         margin: 25px;
     
         img {
-            @include tamano (150px, auto);
-            margin: 20px 5px 20px 5px;
+            @include tamano (100px, auto);
+            margin: 15px 5px 15px 5px;
         }
-    
+    }
+
+    .fabrics__title {
+        margin: 25px;
+    }
+
+    .fabrics__ps {
+        margin: 0px 100px 25px 25px;
+
+        p {
+            margin-right: 100px;
+        }
+    }
+
+    .fabrics__mf {
+        margin: 0px 25px 25px 100px;
+
+        p {
+            margin-left: 100px;
+        }
+    }  
+
+    .fabrics__voile {
+        margin: 0px 100px 25px 25px;
+
+        p {
+            margin-right: 100px;
+        }
+    }  
+
+    .bajada {
+        margin: 50px 100px 50px 100px;
     }
     
     .galeria {
@@ -127,7 +168,7 @@
     }
     
     .galeria__title {
-        margin: 0px;
+        margin-top: 0px;
         padding: 50px;
         height: 150px;
         grid-area: galTitulo;
@@ -226,7 +267,7 @@
     }
 
     .fabricsContenedor {
-        margin: 25px;
+        margin: 15px;
     
         img {
             @include tamano (75px, auto);
@@ -237,49 +278,50 @@
     
     .fabrics__title {
         font-size: 2rem;
-        margin: 25px;
-        padding: 10px;
+        margin: 15px;
+        padding: 20px;
     }
     
     .fabrics__ps {
         display: flex;
         flex-direction: column;
-        padding: 10px;
-        margin: 25px;
+        padding: 20px;
+        margin: 15px;
         font-size: 1.5rem;
     
         p {
-            margin-right: 100px;
+            margin-right: 25px;
         }
     }
     
     .fabrics__mf {
         display: flex;
         flex-direction: column;
-        padding: 10px;
-        margin: 25px;
+        padding: 20px;
+        margin: 15px;
         font-size: 1.5rem;  
     
         p {
-            margin-left: 75px;
+            margin-left: 25px;
         }
     }  
     
     .fabrics__voile {
         display: flex;
         flex-direction: column;
-        padding: 10px;
+        padding: 20px;
         margin: 25px;
         font-size: 1.5rem;
   
     
         p {
-            margin-right: 75px;
+            margin-right: 25px;
         }
     }  
     
     .bajada {
         font-size: 1.5rem;
+        margin: 25px 50px 25px 50px;
     }
 
     .galeria {

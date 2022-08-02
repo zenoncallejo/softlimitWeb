@@ -44,6 +44,7 @@ html {
 
 .footer__redes {
   display: flex;
+  align-self: center;
   width: 50px;
   height: 50px; }
 
@@ -66,7 +67,8 @@ html {
   grid-area: indexMain; }
   .indexMain h1 {
     font-size: 15rem;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    text-shadow: 4px 4px 8px rgba(200, 198, 198, 0.866); }
   .indexMain h2 {
     font-size: 4rem;
     margin-bottom: 300px; }
@@ -77,67 +79,77 @@ html {
 
 .fabricsContenedor {
   display: grid;
-  grid-template-areas: "header" "tituloC" "polarsoft" "microfibra" "voile" "bajada" "footer";
-  background-color: rgba(250, 235, 215, 0.772);
-  border: solid black;
-  margin: 75px; }
+  grid-template-areas: "header" "tituloC" "polarsoft" "microfibra" "voile" "bajada" "footer"; }
   .fabricsContenedor img {
     width: 200px;
-    height: auto;
-    margin: 20px 10px 20px 10px; }
+    height: auto; }
 
 .fabrics__title {
   border: solid black;
-  background-color: rgba(250, 235, 215, 0.772);
+  background-color: rgba(213, 202, 185, 0.772);
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   margin: 50px;
   padding: 25px;
-  font-size: 3rem;
   grid-area: tituloC; }
+  .fabrics__title h1 {
+    font-size: 3rem; }
 
 .fabrics__ps {
   display: flex;
   flex-direction: column;
+  border: solid black;
+  border-radius: 15px;
+  background-color: rgba(213, 202, 185, 0.772);
   padding: 25px;
-  margin: 50px;
-  margin-top: 0;
+  margin: 0px 500px 50px 50px;
   font-size: 2rem;
   justify-content: left;
   text-align: left;
   grid-area: polarsoft; }
   .fabrics__ps p {
-    margin-right: 500px; }
+    margin-right: 200px; }
 
 .fabrics__mf {
   display: flex;
   flex-direction: column;
+  border: solid black;
+  border-radius: 15px;
+  background-color: rgba(213, 202, 185, 0.772);
   padding: 25px;
-  margin: 50px;
-  margin-top: 0;
+  margin: 0px 50px 50px 500px;
+  padding: 25px;
   font-size: 2rem;
   text-align: right;
   align-items: flex-end;
   grid-area: microfibra; }
   .fabrics__mf p {
-    margin-left: 500px; }
+    margin-left: 200px; }
 
 .fabrics__voile {
   display: flex;
   flex-direction: column;
+  border: solid black;
+  border-radius: 15px;
+  background-color: rgba(213, 202, 185, 0.772);
   padding: 25px;
-  margin: 50px;
-  margin-top: 0;
+  margin: 0px 500px 50px 50px;
   font-size: 2rem;
   justify-content: left;
   text-align: left;
   grid-area: voile; }
   .fabrics__voile p {
-    margin-right: 500px; }
+    margin-right: 200px; }
 
 .bajada {
+  border: solid black;
+  border-radius: 15px;
+  background-color: rgba(213, 202, 185, 0.772);
+  padding: 25px;
+  margin: 50px 200px 50px 200px;
   font-size: 2rem;
   text-align: center;
   grid-area: bajada; }
@@ -149,9 +161,10 @@ html {
 .galeria {
   display: grid;
   grid-template-areas: "header header" "galTitulo galCarrusel" "footer footer";
-  background-color: rgba(250, 235, 215, 0.772);
+  background-color: rgba(213, 202, 185, 0.772);
   border: solid black;
-  margin: 75px 200px 100px 200px;
+  border-radius: 15px;
+  margin: 125px 200px 125px 200px;
   padding: 50px; }
 
 .galeria__title {
@@ -160,6 +173,7 @@ html {
   display: flex;
   flex-direction: column;
   border: solid black;
+  border-radius: 15px;
   background-color: rgba(186, 174, 155, 0.772);
   margin: 50px;
   text-align: center;
@@ -181,8 +195,9 @@ html {
 .nosotros {
   display: flex;
   flex-direction: column;
-  background-color: rgba(250, 235, 215, 0.772);
+  background-color: rgba(213, 202, 185, 0.772);
   border: solid black;
+  border-radius: 15px;
   margin: 50px;
   padding: 50px; }
 
@@ -201,6 +216,7 @@ html {
     height: auto;
     border: solid rgba(149, 118, 82, 0.882);
     border-width: 8px;
+    border-radius: 15px;
     margin-top: 100px;
     margin-bottom: 40px; }
   .nosotros__cont h2 {
@@ -223,8 +239,9 @@ html {
 .contacto__main {
   width: 700px;
   height: 550px;
-  background-color: rgba(250, 235, 215, 0.772);
+  background-color: rgba(213, 202, 185, 0.772);
   border-style: solid;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   padding: 25px;
@@ -239,8 +256,9 @@ html {
 .contacto__maps {
   width: 700px;
   height: 550px;
-  background-color: rgba(250, 235, 215, 0.772);
+  background-color: rgba(213, 202, 185, 0.772);
   border-style: solid;
+  border-radius: 15px;
   display: flex;
   padding: 25px;
   justify-content: center;
@@ -257,12 +275,22 @@ html {
     margin-right: 25px; }
   .fabricsContenedor {
     margin: 25px; }
-  .fabrics__ps p {
-    margin-right: 200px; }
-  .fabrics__mf p {
-    margin-left: 200px; }
-  .fabrics__voile p {
-    margin-right: 200px; }
+    .fabricsContenedor img {
+      width: 150px;
+      height: auto;
+      margin: 15px 5px 15px 5px; }
+  .fabrics__ps {
+    margin: 0px 250px 25px 25px; }
+    .fabrics__ps p {
+      margin-right: 200px; }
+  .fabrics__mf {
+    margin: 0px 25px 25px 250px; }
+    .fabrics__mf p {
+      margin-left: 200px; }
+  .fabrics__voile {
+    margin: 0px 250px 25px 25px; }
+    .fabrics__voile p {
+      margin-right: 200px; }
   .galeria {
     margin: 50px 50px 50px 50px;
     height: 550px; }
@@ -295,7 +323,6 @@ html {
     line-height: 100px;
     margin-right: 40px; }
     .indexMain h1 {
-      color: #9f9f9f;
       font-size: 11rem;
       margin-bottom: 30px; }
     .indexMain h2 {
@@ -305,9 +332,25 @@ html {
   .fabricsContenedor {
     margin: 25px; }
     .fabricsContenedor img {
-      width: 150px;
+      width: 100px;
       height: auto;
-      margin: 20px 5px 20px 5px; }
+      margin: 15px 5px 15px 5px; }
+  .fabrics__title {
+    margin: 25px; }
+  .fabrics__ps {
+    margin: 0px 100px 25px 25px; }
+    .fabrics__ps p {
+      margin-right: 100px; }
+  .fabrics__mf {
+    margin: 0px 25px 25px 100px; }
+    .fabrics__mf p {
+      margin-left: 100px; }
+  .fabrics__voile {
+    margin: 0px 100px 25px 25px; }
+    .fabrics__voile p {
+      margin-right: 100px; }
+  .bajada {
+    margin: 50px 100px 50px 100px; }
   .galeria {
     display: grid;
     grid-template-areas: "header" "galTitulo" "galCarrusel" "footer";
@@ -315,7 +358,7 @@ html {
     height: 1000px;
     padding-top: 0px; }
   .galeria__title {
-    margin: 0px;
+    margin-top: 0px;
     padding: 50px;
     height: 150px;
     grid-area: galTitulo; }
@@ -378,41 +421,42 @@ html {
     .indexMain h2 {
       font-size: 2rem; }
   .fabricsContenedor {
-    margin: 25px; }
+    margin: 15px; }
     .fabricsContenedor img {
       width: 75px;
       height: auto;
       margin: 20px 5px 20px 5px; }
   .fabrics__title {
     font-size: 2rem;
-    margin: 25px;
-    padding: 10px; }
+    margin: 15px;
+    padding: 20px; }
   .fabrics__ps {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    margin: 25px;
+    padding: 20px;
+    margin: 15px;
     font-size: 1.5rem; }
     .fabrics__ps p {
-      margin-right: 100px; }
+      margin-right: 25px; }
   .fabrics__mf {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    margin: 25px;
+    padding: 20px;
+    margin: 15px;
     font-size: 1.5rem; }
     .fabrics__mf p {
-      margin-left: 75px; }
+      margin-left: 25px; }
   .fabrics__voile {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px;
     margin: 25px;
     font-size: 1.5rem; }
     .fabrics__voile p {
-      margin-right: 75px; }
+      margin-right: 25px; }
   .bajada {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    margin: 25px 50px 25px 50px; }
   .galeria {
     margin: 25px 10px 25px 10px;
     height: 700px; }
